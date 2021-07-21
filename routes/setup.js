@@ -5,6 +5,7 @@ const infosRouter = require('./infosRouter');
 const socialsRouter = require('./socialsRouter')
 const skillsRouter = require('./skillsRouter')
 const experiencesRouter = require('./experiencesRouter');
+const projectsRouter = require('./projectsRouter');
 
 const setupRoutes = (app) => {
     // ajouter ici les autres routers + créer un router par table
@@ -13,6 +14,7 @@ const setupRoutes = (app) => {
     app.use('/formation', formationRouter);
     app.use('/skills', skillsRouter);
     app.use('/experiences', experiencesRouter);
+    app.use('/projects', projectsRouter);
 }
 
 module.exports = {

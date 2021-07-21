@@ -14,4 +14,61 @@ socialsRouter.get('/', (req, res) => {
    });
 
 
+   socialsRouter.get("/:id", (req, res) => {
+    connection.query(
+      "SELECT * from socials WHERE id=?",
+      [req.params.id],
+      (err, results) => {
+        if (err) {
+          console.log(err);
+          res.status(500).send("error retrieving data");
+        } else {
+          if (results.length) res.json(results[0]);
+          else res.status(404).send("social not found");
+        }
+      }
+    );
+  });
+
+
+
+
+   socialsRouter.post('/', (req, res) => {
+    const {name, link} = req.body;
+    connection.query(
+      'INSERT INTO socials(name, link) VALUES (?,?)',
+      [name, link],
+      (err, result) => {
+        if (err) {
+          console.error(err);
+          res.status(500).send('Error saving the social network');
+        } else {
+          const id = result.insertId;
+          const createdSocial = {name, link};
+          res.status(201).json(createdSocial);
+        }
+      }
+    );
+  });
+
+
+
+  socialsRouter.delete("/", (req, res) => {
+    const socialId = req.params.id;
+    connection.query(
+      "DELETE FROM socials WHERE id = ?",
+      [socialId],
+      (err, results) => {
+        if (err) {
+          console.log(err);
+          res.status(500).send("error deleting a social network");
+        } else {
+          res.status(200).send("social network deleted");
+        }
+      }
+    );
+  });
+
+
+
    module.exports = socialsRouter;

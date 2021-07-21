@@ -53,11 +53,11 @@ socialsRouter.get('/', (req, res) => {
 
 
 
-  socialsRouter.delete("/", (req, res) => {
-    const socialId = req.params.id;
+  socialsRouter.delete("/:id", (req, res) => {
+    const socialsId = req.params.id;
     connection.query(
       "DELETE FROM socials WHERE id = ?",
-      [socialId],
+      [socialsId],
       (err, results) => {
         if (err) {
           console.log(err);

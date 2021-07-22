@@ -59,7 +59,7 @@ CREATE TABLE `experiences` (
   `period` varchar(255) DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +68,7 @@ CREATE TABLE `experiences` (
 
 LOCK TABLES `experiences` WRITE;
 /*!40000 ALTER TABLE `experiences` DISABLE KEYS */;
-INSERT INTO `experiences` VALUES (1,'Webmaster','Nespresso France','Paris','Création de contenus digitaux sur le site et l’application mobile via CMS et en HTML – CSS – JS : pages, composants, landing pages, emails','mai 2019- mars 2020','https://logo-marque.com/wp-content/uploads/2021/01/Nespresso-Logo.png'),(2,'Chef de projet communication IT marketing','ENGIE Cofely','La Défense','Développement de la stratégie de communication interne de la DSI: creation de vidéos, d\'un intranet, bilans d\'activités, Création et mise en place du site intranet Sharepoint de la DSI couplé à PowerBI pour présentant les projets, les applis, KPI et les actualités de la DSI','aout 2017- février 2019','https://www.energie3-prowatt.fr/wp-content/uploads/2016/06/logo-engie-cofely.png'),(3,'Chargée de projet Web','BNP Paribas – Retail developpement & Distribution','Paris','Accompagnement au changement de plateforme web (CMS) : suivi et participation au RFI - RFP : création d\'outils d\'audit, de questionnaires, recueil des besoins, organisation de sessions orales avec les éditeurs de solutions CMS ,formation des utilisateurs au CMS TeamSite','janvier 2016 - avril 2017','https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/BNP_Paribas_2009.svg/2560px-BNP_Paribas_2009.svg.png'),(4,'Webmaster','Gares & Connexions - SNCF','Paris','Création du site https://www.gares-sncf.com/ : conception graphique, gestion éditoriale, formation aux rédacteurs en région à l\'utilisation du CMS Drupal','novembre 2014 - décembre 2015','https://upload.wikimedia.org/wikipedia/fr/thumb/b/b4/Logo_SNCF_Gares_%26_Connexions_-_2016.svg/1280px-Logo_SNCF_Gares_%26_Connexions_-_2016.svg.png');
+INSERT INTO `experiences` VALUES (1,'Webmaster','Nespresso France','Paris','Création de contenus digitaux sur le site et l’application mobile via CMS et en HTML – CSS – JS : pages, composants, landing pages, emails','mai 2019- mars 2020','https://logo-marque.com/wp-content/uploads/2021/01/Nespresso-Logo.png'),(2,'Chef de projet communication IT marketing','ENGIE Cofely','La Défense','Développement de la stratégie de communication interne de la DSI: creation de vidéos, d\'un intranet, bilans d\'activités, Création et mise en place du site intranet Sharepoint de la DSI couplé à PowerBI pour présentant les projets, les applis, KPI et les actualités de la DSI','aout 2017- février 2019','https://www.energie3-prowatt.fr/wp-content/uploads/2016/06/logo-engie-cofely.png'),(3,'Chargée de projet Web','BNP Paribas – Retail developpement & Distribution','Paris','Accompagnement au changement de plateforme web (CMS) : suivi et participation au RFI - RFP : création d\'outils d\'audit, de questionnaires, recueil des besoins, organisation de sessions orales avec les éditeurs de solutions CMS ,formation des utilisateurs au CMS TeamSite','janvier 2016 - avril 2017','https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/BNP_Paribas_2009.svg/2560px-BNP_Paribas_2009.svg.png'),(4,'Webmaster','Gares & Connexions - SNCF','Paris','Création du site https://www.gares-sncf.com/ : conception graphique, gestion éditoriale, formation aux rédacteurs en région à l\'utilisation du CMS Drupal','novembre 2014 - décembre 2015','https://upload.wikimedia.org/wikipedia/fr/thumb/b/b4/Logo_SNCF_Gares_%26_Connexions_-_2016.svg/1280px-Logo_SNCF_Gares_%26_Connexions_-_2016.svg.png'),(6,'Intégrateur Web - Webmaster','','','Creation de sites, mises à jour ','2012 - 2014','https://www.people4impact.com/files/logo-efires-5f4bacfb42977165589669.png');
 /*!40000 ALTER TABLE `experiences` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -114,7 +114,7 @@ CREATE TABLE `projects` (
   `description` text,
   `period` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,7 +123,7 @@ CREATE TABLE `projects` (
 
 LOCK TABLES `projects` WRITE;
 /*!40000 ALTER TABLE `projects` DISABLE KEYS */;
-INSERT INTO `projects` VALUES (1,'Mascarpade','https://marscapade-app.netlify.app/static/media/header.5db014b2.jpg','https://marscapade-app.netlify.app/',' Mascarpade, application visant à proposer des activités pour lutter contre la solitude pour les habitants de Mars > Projet gagnant du Hackaton 1 Wild Code School ! : React.js, MySQL, Node.js','30 heures'),(2,'Mood_Mixtape','https://cdns-images.dzcdn.net/images/cover/b2fc0059d0e8919fbc54f7b60f25760c/250x250-000000-80-0-0.jpg','https://moodmixtape.netlify.app/','Réalisation d\'une application musicale utilisant l\'API publique Deezer : react.js, HTML, CSS (5 semaines)','5 semaines');
+INSERT INTO `projects` VALUES (1,'Mascarpade','https://marscapade-app.netlify.app/static/media/header.5db014b2.jpg','https://marscapade-app.netlify.app/',' Mascarpade, application visant à proposer des activités pour lutter contre la solitude pour les habitants de Mars > Projet gagnant du Hackaton 1 Wild Code School ! : React.js, MySQL, Node.js','30 heures'),(2,'Mood_Mixtape','https://cdns-images.dzcdn.net/images/cover/b2fc0059d0e8919fbc54f7b60f25760c/250x250-000000-80-0-0.jpg','https://moodmixtape.netlify.app/','Réalisation d\'une application musicale utilisant l\'API publique Deezer : react.js, HTML, CSS (5 semaines)','5 semaines'),(3,'Twenty-five','https://twentyfive.netlify.app/static/media/workers.363c2f6c.png','https://twentyfive.netlify.app/',' Creation d\'une App de bien être : React JS, styled-components, MySQL, Node, Express JS','72 heures');
 /*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -165,7 +165,7 @@ CREATE TABLE `socials` (
   `link` varchar(100) NOT NULL,
   `image` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -174,7 +174,7 @@ CREATE TABLE `socials` (
 
 LOCK TABLES `socials` WRITE;
 /*!40000 ALTER TABLE `socials` DISABLE KEYS */;
-INSERT INTO `socials` VALUES (22,'sdf','sdf',NULL),(23,'qsfsqf','sqf',NULL),(24,'fdfdf','dfdf',NULL);
+INSERT INTO `socials` VALUES (26,'Github','https://github.com/vio9','https://image.flaticon.com/icons/png/512/25/25231.png'),(28,'Linkedin','','https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png');
 /*!40000 ALTER TABLE `socials` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -187,4 +187,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-22 10:45:43
+-- Dump completed on 2021-07-22 17:09:35

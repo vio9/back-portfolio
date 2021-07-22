@@ -32,5 +32,20 @@ experiencesRouter.get('/', (req, res) => {
     );
   });
 
+  experiencesRouter.delete("/:id", (req, res) => {
+    const experiencesId = req.params.id;
+    connection.query(
+      "DELETE FROM experiences WHERE id = ?",
+      [experiencesId],
+      (err, results) => {
+        if (err) {
+          console.log(err);
+          res.status(500).send("error deleting an experience");
+        } else {
+          res.status(200).send("experience deleted");
+        }
+      }
+    );
+  });
 
    module.exports = experiencesRouter;

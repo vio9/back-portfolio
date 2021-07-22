@@ -34,17 +34,17 @@ socialsRouter.get('/', (req, res) => {
 
 
    socialsRouter.post('/', (req, res) => {
-    const {name, link} = req.body;
+    const {name, link, image} = req.body;
     connection.query(
-      'INSERT INTO socials(name, link) VALUES (?,?)',
-      [name, link],
+      'INSERT INTO socials(name, link, image) VALUES (?,?,?)',
+      [name, link, image],
       (err, result) => {
         if (err) {
           console.error(err);
           res.status(500).send('Error saving the social network');
         } else {
           const id = result.insertId;
-          const createdSocial = {name, link};
+          const createdSocial = {name, link, image};
           res.status(201).json(createdSocial);
         }
       }
